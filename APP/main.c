@@ -135,19 +135,19 @@ void main()
 		if(moveLeft)
 		{
 			BallX--;
-			if(PressedKey==3 && BallY ==1)
+			if(PressedKey==9 && BallY ==1)
 			{
 				BallY--;
 			}
-			if(PressedKey==9 && BallY==0)
+			if(PressedKey==3 && BallY==0)
 			{
 				BallY++;
 			}
-			if(PressedKey==1 && Pad1Y==1)
+			if(PressedKey==7 && Pad1Y==1)
 			{
 				Pad1Y--;
 			}
-			if(PressedKey==7 && Pad1Y==0)
+			if(PressedKey==1 && Pad1Y==0)
 			{
 				Pad1Y++;
 			}
@@ -155,19 +155,19 @@ void main()
 		else
 		{
 			BallX++;
-			if(PressedKey==1 && BallY==1)
+			if(PressedKey==7 && BallY==1)
 			{
 				BallY--;
 			}
-			if(PressedKey==7 && BallY==0)
+			if(PressedKey==1 && BallY==0)
 			{
 				BallY++;
 			}
-			if(PressedKey==3 && Pad2Y==1)
+			if(PressedKey==9 && Pad2Y==1)
 			{
 				Pad2Y--;
 			}
-			if(PressedKey==9 && Pad2Y==0)
+			if(PressedKey==3 && Pad2Y==0)
 			{
 				Pad2Y++;
 			}
