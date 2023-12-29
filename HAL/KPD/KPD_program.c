@@ -6,9 +6,9 @@
 /*****************************************************************/
 /*****************************************************************/
 
-#include"STD_TYPES.h"
+#include"../../LIB/STD_TYPES.h"
 
-#include"DIO_interface.h"
+#include"../../MCAL/DIO/DIO_interface.h"
 #include "KPD_config.h"
 #include "KPD_interface.h"
 #include "KPD_private.h"
@@ -37,6 +37,7 @@ u8 KPD_u8GetPressedKey(void)
 					DIO_u8GetPinValue(KPD_PORT,Local_ROWArr[Local_u8RowIdx],&Local_u8PinState);
 				}
 				Local_u8PressedKey=Local_KPDArr[Local_u8RowIdx][Local_u8ColIdx];
+				DIO_u8SetPinValue(KPD_PORT,Local_COLArr[Local_u8ColIdx],DIO_u8PIN_HIGH);
 				return Local_u8PressedKey;
 			}
 		}

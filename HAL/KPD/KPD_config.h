@@ -10,7 +10,7 @@
 #ifndef KPD_CONFIG_H_
 #define KPD_CONFIG_H_
 
-#define KPD_BUTTONS_VAL  {{1,2,3,'+'},{4,5,6,'-'},{7,8,9,'*'},{'A',0,'=','/'}}
+#define KPD_BUTTONS_VAL  {{7,8,9,'/'},{4,5,6,'*'},{1,2,3,'-'},{'A',0,'=','+'}}
 
 #define KPD_PORT   DIO_u8PORTC
 
